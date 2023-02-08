@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+
+
+/* -------------------standar of css-------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* -----------logo css -------------------- */
+section a img {
+    width: 100px;
+}
+
+body #banner {
+    min-height: 100vh;
+    background: linear-gradient(skyblue, pink);
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background: linear-gradient(pink, skyblue);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(skyblue); */
+}
+
+#logo {
+    display: flex;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 1s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.Lets_Talk {
+    padding: 10px 30px;
+    border: 1px solid blue;
+    background-color: lightpink;
+    border-radius: 8px;
+    font-size: 18px;
+    /* font-family: initial; */
+    cursor: pointer;
+
+}
+
+.Lets_Talk:hover {
+    background-image: linear-gradient(to right, skyblue, pink);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------hero section  --------------- */
+#hero {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#hero .main_part {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#hero .greeting {
+    margin-top: 30px;
+}
+
+#hero .name {
+    margin-top: -10px;
+}
+
+#hero .detail {
+    width: 473px;
+    margin-top: 10px;
+}
+
+#hero h2 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: pink;
+    color: #E3E6F3;
+    border: 1px solid #cce7d0;
+    padding: 10px 60px 10px 55px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 999;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+#hero button:hover {
+
+    background-image: linear-gradient(to right, skyblue, pink);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+
+}
+
+
+#hero .follow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 95px;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 23px;
+    width: 190px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+
+}
+
+#hero .follow i:hover,
+#hero a:hover {
+    color: #088178;
+}
+
+
+#hero .photo {
+    padding: 30px 386px 0px 0px;
+}
+
+#hero .photo img {
+    height: 60vh;
+    width: auto;
+    background-size: cover;
+    background-position: top 35% right 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 64px;
+    border: 2px solid lightpink;
+
+
+}
+
+.right_part .img img {
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.right_part .img1 img {
+    margin: 20px 0px 0px -350px;
+    border: 1px solid black;
+    border-radius: 50% 20% /10% 40%;
+    box-sizing: border-box;
+}
+
+#hero .right_part .skill {
+    display: flex;
+    border-radius: 10px;
+    background-color: black;
+    color: #E3E6F3;
+    border: 1px solid black;
+    padding: 10px 30px 10px 35px;
+    margin: 10px 10px 10px -340px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 999;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.right_part .img2 img {
+    margin: 40px 0px 0px -250px;
+    border: 1px solid black;
+    border-radius: 50% 20% /10% 40%;
+    box-sizing: border-box;
+}
+
+.right_part .img3 img {
+    margin: 12px 0px 0px -350px;
+    border: 1px solid black;
+    border-radius: 50% 20% /10% 40%;
+    box-sizing: border-box;
+}
+
+#hero .right_part .development {
+    display: flex;
+    border-radius: 10px;
+    background-color: black;
+    color: #E3E6F3;
+    border: 1px solid black;
+    padding: 10px 30px 10px 35px;
+    margin: 10px 10px 10px -350px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 999;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* -----------------service--------------- */
+#about {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#about .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgreen;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: lightblue;
+    margin: 30px 0px 10px 160px;
+    padding: 0px 10px 10px 0px;
+}
+
+/* ===========.service1================== */
+#about .service1 {
+    display: flex;
+    border: 1px solid lightgreen;
+    width: 90%;
+    box-sizing: border-box;
+    /* margin: 5px 10px 5px 10px; */
+    margin-top: 10px;
+    background-color: lightpink;
+    padding: 0px 0px 0px 0px;
+    border-radius: 30px;
+}
+
+.service1 h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-size: 28px;
+}
+
+#about .service1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 5px;
+}
+
+.service1 img {
+    width: 60px;
+    height: 10vh;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px solid red;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 30px 19px;
+}
+
+/* ===========.service2================== */
+#about .service2 {
+    display: flex;
+    border: 1px solid lightgreen;
+    width: 90%;
+    box-sizing: border-box;
+    /* margin: 5px 10px 5px 10px; */
+    margin-top: 10px;
+    background-color: lightpink;
+    padding: 0px 0px 0px 0px;
+    border-radius: 30px;
+}
+
+.service2 h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-size: 28px;
+}
+
+#about .service2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 5px;
+}
+
+.service2 img {
+    width: 60px;
+    height: 10vh;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px solid red;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 30px 19px;
+}
+
+/* ===========.service3================== */
+#about .service3 {
+    display: flex;
+    border: 1px solid lightgreen;
+    width: 90%;
+    box-sizing: border-box;
+    /* margin: 5px 10px 5px 10px; */
+    margin-top: 10px;
+    background-color: lightpink;
+    padding: 0px 0px 0px 0px;
+    border-radius: 30px;
+}
+
+.service3 h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-size: 28px;
+}
+
+#about .service3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 5px;
+}
+
+.service3 img {
+
+    width: 60px;
+    height: 10vh;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px solid red;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 30px 19px;
+}
+
+/* ===========================my service============ */
+
+.myservice {
+    width: 456px;
+    display: flex;
+    flex-direction: column;
+    margin: 71px 0px 0px 180px;
+}
+
+.myservice h1 span {
+    color: lightgray;
+    font-family: initial;
+
+}
+
+.myservice h1 {
+    font-family: initial;
+
+}
+
+.myservice button {
+    font-weight: 999;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 149px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: pink;
+    border: 1px solid #cce7d0;
+    padding: 10px 10px 10px 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.myservice button:hover {
+
+    background-image: linear-gradient(to right, skyblue, pink);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================work===================== */
+
+#work .title2 h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#work .title2 h1 span {
+    color: lightgray;
+    margin: 0px 0px 0px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.development {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.development .development1 {
+    border: 3px solid lightgreen;
+    border-radius: 40px;
+    margin: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    background-color: #E3E6F3;
+}
+
+.development .development1 p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.development .development1 button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 20px 40px;
+    color: green;
+    background-color: pink;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.development .development1 img {
+    width: 255px;
+    border-radius: 10px;
+    height: 41vh;
+    margin: 12px 15px 0px 19px;
+}
+
+/* ===========certificate=================== */
+
+#certificate h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px 40px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#certificate h1 span {
+    color: lightgray;
+    margin: 0px 0px 0px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#certificate .certificate1 h4{
+    color: pink;
+font-size: 25px;
+    margin: 0px 0px 10px 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#certificate .certificate1 h4 i{
+    color: lightgreen;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.06);
+}
+#certificate .certificate1 h6{
+    color: green;
+    margin: 0px 0px 10px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+#certificate .certification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#certificate .certificate1 img {
+    width: 270px;
+}
+
+.certification .certificatechange1{
+    margin: 0px 0px 0px 0px;
+}
+.certification .certificatechange2{
+    margin: 80px 0px 0px 0px;
+}
+
+.certification .certificatechange3{
+    margin: 0px 0px 0px 0px;
+}
+
+.certification .certificatechange4{
+    margin: 80px 0px 0px 0px;
+}
+
+#certificate button {
+    font-weight: 999;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 149px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: pink;
+    border: 1px solid #cce7d0;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0px  30px 1100px ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex; 
+    box-shadow: 12px 12px 2px 1px rgb(169,169,169)
+}
+
+#certificate button:hover {
+
+    background-image: linear-gradient(to right, skyblue, pink);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =====================E-mail================== */
+
+#Gmail h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px 40px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Gmail h1 img {
+	width: 50px;
+	border: 3px solid green;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+#Gmail h1 span {
+    color: lightgray;
+    margin: 0px 0px 0px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* #Gmail  .Textbox{
+    display: flex;
+    flex-direction: row;
+} */
+
+/* =======================Email_form============== */
+.Email_form .text1{
+    color: lightgray;
+    font-size: 80px;
+    margin: 0px 0px 0px 150px;
+}
+.Email_form h2{
+    font-weight: 900;
+    margin: 0px 0px 0px 40px;
+}
+.Email_form .name{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    margin: 10px 60px ;
+}
+
+.Email_form .name .firstname{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    margin: 10px 60px ;
+}
+.Email_form .name .firstname #fname{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border-radius: 20px;
+    border: 2px solid lightgreen;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 10vh;
+    background-color: lightpink;
+    font-size: 20px;
+}
+.Email_form .name .lastname #lname{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid lightgreen;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 10vh;
+    background-color: lightpink;
+    font-size: 20px;
+}
+
+.Email_form .Email h3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 370px ;
+    font-size: 20px;
+}
+#Gmail .Email #email{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid lightgreen;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    height: 10vh;
+    background-color: lightpink;
+    font-size: 20px;
+    margin: 10px 240px ;
+}
+
+#Gmail .Textbox h3{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 370px ;
+    font-size: 20px;
+}
+
+#Gmail .Textbox #Textname{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 2px solid lightgreen;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    height: 30vh;
+    background-color: lightpink;
+    font-size: 20px;
+    margin: 10px 150px ;
+}
+
+ #Gmail .Textbox .Email_icon{
+    display: flex;
+    flex-direction: row;
+    
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    width: 18%;
+    height: 5vh;
+    background-color: white;
+    font-size: 20px;
+    margin: 10px 360px ;
+    box-sizing: border-box;
+    cursor: pointer;
+} 
+#Gmail .Textbox .Email_icon i:hover{
+
+    color: blue;
+    font-size: 30px;
+    transition: 0.10s ease;
+    border: 1px solid green;
+    border-radius: 20px;
+    background-color: lightgreen;
+    box-shadow: 12px 12px 2px 1px rgb(169,169,169)
+} 
+
+#Gmail .Textbox .Email_icon button {
+    font-weight: 999;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: pink;
+    border: 1px solid #cce7d0;
+    padding: 10px 10px 10px 10px;
+    margin: 30px 0px  30px -20px ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex; 
+    box-shadow: 12px 12px 2px 1px rgb(169,169,169)
+}
+#Gmail .Textbox .Email_icon button:hover {
+
+    background-image: linear-gradient(to right, skyblue, pink);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+#Gmail img{
+ display: flex;
+    width: 100px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+}

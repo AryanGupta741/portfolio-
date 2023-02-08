@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+.development {
+    display: flex;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.work img{
+    width: 100px;
+}
+.work p{
+    display: flex;
+    width: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+p{
+    display: flex;
+    width: 20px;
+    font-family: 'Noto Serif Khojki', serif;
+    font-size: 50px;
+    font-weight: 900;
+}
